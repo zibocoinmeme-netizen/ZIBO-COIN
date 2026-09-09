@@ -1,1 +1,9 @@
-const cursor=document.querySelector('.cursor');if(cursor){window.addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'})}const menu=document.querySelector('.menu');const nav=document.querySelector('nav');if(menu&&nav){menu.addEventListener('click',()=>{nav.classList.toggle('open')})}const items=document.querySelectorAll('.section,.hero-copy,.zibo-stage');const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08});items.forEach(e=>{e.classList.add('reveal');observer.observe(e)});window.addEventListener('scroll',()=>{document.documentElement.style.setProperty('--scroll',window.scrollY)},{passive:true});
+const nav=document.querySelector('.navlinks');
+const navLinks=document.querySelectorAll('.navlinks a');
+const sections=document.querySelectorAll('section,.hero-art,.hero h1,.hero-title,.actions,.tag');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('in')});
+},{threshold:.08});
+sections.forEach(el=>{el.classList.add('reveal');observer.observe(el)});
+navLinks.forEach(link=>link.addEventListener('click',()=>nav?.classList.remove('open')));
+window.addEventListener('scroll',()=>document.documentElement.style.setProperty('--scroll',window.scrollY),{passive:true});
