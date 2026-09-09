@@ -1,27 +1,18 @@
 # ZIBO Website
 
-This directory is reserved for the future ZIBO website.
+This directory contains the first static website foundation for ZIBO COIN.
+
+## Status
+
+The website is a presentation layer for the current meme-culture project. It does not deploy or interact with a token contract.
+
+## Files
+
+- `index.html` — semantic landing page
+- `styles.css` — responsive visual system
 
 ## Direction
 
-Hero:
+Character → Meme → Culture → Community → Movement → ZIBO COIN
 
-> ZIBO
-> JUST MEME IT.
->
-> Same internet. Different vibe.
-
-Planned sections:
-
-- About ZIBO
-- Lore
-- Meme Culture
-- Community
-- Roadmap
-- Token — Coming Later
-- GitHub
-- X/Twitter
-
-The site should use a modern meme/internet aesthetic with green and orange, dark backgrounds, space/Earth imagery, digital elements, large typography, and strong ZIBO character presence.
-
-No deployed token or live financial functionality should be implied by this directory.
+The token section is intentionally presented as **Coming Later / Planned**. Do not add a contract address, trading links, liquidity claims, price information, or financial promises until those facts actually exist and are officially verified.
